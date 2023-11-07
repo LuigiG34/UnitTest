@@ -4,6 +4,7 @@
 
 ### Bundles
 PHPUnit : ```composer require --dev phpunit/phpunit```
+
 PHPUnit Bridge : ```composer require --dev symfony/phpunit-bridge```
 
 ### Executer les tests
@@ -62,12 +63,15 @@ OK (5 tests, 5 assertions)
 
 ### Les 3 types de doublures
 1. **Mock** ```Un Mock est un faux objet qui imite un objet réel. Il est utilisé pour simuler le comportement d'une classe ou d'une interface. Vous pouvez contrôler son comportement et vérifier qu'il est utilisé comme prévu.```
+    
     *Exemple:* ```Imaginons que vous ayez une classe EmailService qui envoie des e-mails. Pour tester une autre classe qui utilise EmailService sans envoyer de vrais e-mails, vous pouvez créer un Mock de EmailService.```
 ---
 2. **Dummy** ```Un Dummy est un objet très simple qui est juste là pour être passé comme paramètre mais qui n'est pas réellement utilisé. Il n'a pas de comportement.```
+    
     *Exemple:* ```Disons que vous avez une méthode qui nécessite un objet Logger en paramètre, mais vous ne vous en servez pas dans le cadre de votre test.```
 ---
 3. **Stub** ```Un Stub est comme un Dummy, mais avec un comportement prévu. Vous pouvez définir des valeurs de retour pour certaines méthodes.```
+    
     *Exemple:* ```Vous avez une classe Database et vous ne voulez pas faire de vraies requêtes dans vos tests. Vous pouvez créer un Stub de Database.```
 
 ### Le TDD (Test Driven Development)
