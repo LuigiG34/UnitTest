@@ -1,6 +1,6 @@
 ## Openclassrooms : Testez unitairement votre application
 
-*Ce projet est un résumé de ce que j'ai pu retenir de ce cours : https://openclassrooms.com/fr/courses/4087056-testez-unitairement-votre-application-php-symfony*
+*Ce projet est un résumé des informations essentiels de  : https://openclassrooms.com/fr/courses/4087056-testez-unitairement-votre-application-php-symfony*
 
 ### Bundles
 PHPUnit : ```composer require --dev phpunit/phpunit```
@@ -77,3 +77,18 @@ OK (5 tests, 5 assertions)
 ### Le TDD (Test Driven Development)
 
 On utilise des outils comme Travis CI pour notre cycle d'intégration continue : ```L'outil d'intégration continue permet de lancer l'ensemble des autres outils le plus rapidement possible, afin de valider un build avant d'entamer un déploiement ou une fusion de branche, par exemple.```
+
+---
+---
+---
+
+## Openclassrooms : Testez fonctionnellement votre application
+
+*Ce projet est un résumé des informations essentiels de : https://openclassrooms.com/fr/courses/4087076-testez-fonctionnellement-votre-application-php-symfony*
+
+### Bundles
+1. DAMA Doctrine Test Bundle : ```composer require --dev dama/doctrine-test-bundle``` (Ce bundle nous permet de ne pas modifier réellement notre BDD)
+
+2. Behat favorise la méthode BDD (Behaviour Development Driven), axée sur l'idée que la logique business est au centre de tous les choix de développement. La manière d'écrire les tests se veut la plus humaine possible, et toujours autour de scénarios de tests ;
+3. Selenium permet d'automatiser et simuler de vrais navigateurs ;
+4. PHPSpec facilite le TDD (Test Driven Development) en vous forçant à décrire le comportement de la classe que vous serez sur le point de développer.  
